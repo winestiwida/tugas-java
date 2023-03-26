@@ -1,0 +1,18 @@
+kelas  publik Mahasiwa {
+     nama String  publik ;
+     string  publik nim ;
+     jurusan String  publik ;
+    publik  int  tahun_lahir ;
+     jenis_kelamin String  publik ;
+
+    public  Mahasiwa ( String  nama , String  nim , String  jurusan , int  tahun_lahir , String  jenis_kelamin ) {
+        ini . nama = nama . panjang () < 8 ? nama + "\t" : nama ;
+        ini . nim = nim . panjang () < 8 ? nim + "\t" : nim ;
+        ini . jurusan = jurusan . panjang () < 8 ? jurusan + "\t\t" : ( jurusan .panjang () < 16 ? jurusan + "\t" : jurusan ) ;
+        ini . tahun_lahir = tahun_lahir ;
+        ini . jenis_kelamin = jenis_kelamin ;
+    }
+    public  int  Umur (){
+        kembali  2023 - Integer . nilaiDari ( tahun_lahir );
+    }
+}
